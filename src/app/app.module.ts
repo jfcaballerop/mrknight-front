@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
+import { BootstrapModule } from './bootstrap/bootstrap.module';
 import { CoreModule } from './core/core.module';
 
 
@@ -13,6 +14,7 @@ import { CoreModule } from './core/core.module';
     AppComponent
   ],
   imports: [
+    BootstrapModule,
     BrowserModule,
     FormsModule,
     CoreModule,

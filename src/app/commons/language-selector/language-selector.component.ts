@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-language-selector',
@@ -6,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./language-selector.component.scss']
 })
 export class LanguageSelectorComponent implements OnInit {
-  selectedCountryCode = 'us';
-  countryCodes = ['us', 'lu', 'de', 'bs', 'br', 'pt'];
+  selectedCountryCode = 'es';
+  countryCodes = ['es', 'gb'];
   showFlags = true;
-  
+
   changeSelectedCountryCode(value: string): void {
     this.selectedCountryCode = value;
+    this.translate.use(value);
+
   }
-  constructor() { }
+  constructor(public translate: TranslateService
+  ) { }
 
   ngOnInit(): void {
   }

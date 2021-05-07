@@ -1,3 +1,6 @@
 {
-    "CORE-NAV-BAR-NAV-BRAND" :"Mr. Knight 2"
+    "CORE-NAV-BAR-NAV-BRAND" :"Mr. Knight 2",
+    "BUTTON-HOME-MAIN-PAGE-TEXT": "Main page",
+    "BUTTON-LABEL-DEFAULT" : "Accept"
+
 }

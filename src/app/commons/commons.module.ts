@@ -4,13 +4,15 @@ import { NavComponent } from './nav/nav.component';
 import { NgxFlagPickerModule } from 'ngx-flag-picker';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { ButtonComponent } from './button/button.component';
 
 
 
 @NgModule({
   declarations: [
     NavComponent,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
+    ButtonComponent
 
   ],
   imports: [
@@ -20,7 +22,8 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   exports: [
     NavComponent,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
+    ButtonComponent
 
   ]
 })

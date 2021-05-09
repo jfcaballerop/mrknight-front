@@ -2,11 +2,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonsModule } from '@appCommons';
+import { CoreModule } from '@appCore';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { BootstrapModule } from './bootstrap/bootstrap.module';
-import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 
 
@@ -17,11 +18,12 @@ import { HomeModule } from './home/home.module';
   ],
   imports: [
     HomeModule,
+    CoreModule,
+    CommonsModule,
     HttpClientModule,
     BootstrapModule,
     BrowserModule,
     FormsModule,
-    CoreModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

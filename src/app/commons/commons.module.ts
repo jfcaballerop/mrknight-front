@@ -5,6 +5,7 @@ import { NgxFlagPickerModule } from 'ngx-flag-picker';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from './button/button.component';
+import { CoreModule } from '@appCore';
 
 
 
@@ -18,7 +19,8 @@ import { ButtonComponent } from './button/button.component';
   imports: [
     CommonModule,
     NgxFlagPickerModule,
-    TranslateModule
+    TranslateModule,
+    CoreModule
   ],
   exports: [
     NavComponent,

@@ -17,6 +17,14 @@
       "dom"
     ],
     "resolveJsonModule": true,
+    "paths": {
+      "@appCore": [
+        "./src/app/core"
+      ],
+      "@appCommons": [
+        "./src/app/commons"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false

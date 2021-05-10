@@ -22,6 +22,19 @@ export class HomePageComponent implements OnInit {
 
   clicButton(but: string) {
     console.log('Evento: ', but);
+    switch (but) {
+      case 'CLIC_MAIN_BUTTON':
+        console.log('VAL', but);
+
+        break;
+      case 'CLIC_SENCOND':
+        console.log('VAL', but);
+
+        break;
+
+      default:
+        break;
+    }
 
   }
 

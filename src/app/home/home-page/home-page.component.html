@@ -3,11 +3,14 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <app-button 
-            (clicButtonEvent)="clicButton($event)" 
-            [buttonName]="buttonName" 
-            [labelButton]="labelTextButton"
-            [className]="'danger'"></app-button>
+            <app-button (clicButtonEvent)="clicButton($event)" [buttonName]="buttonName" [labelButton]="labelTextButton"
+                [className]="'warning'"></app-button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-button (clicButtonEvent)="clicButton($event)" [buttonName]="'SENCOND'" [labelButton]="labelTextButton"
+                [className]="'danger'"></app-button>
         </div>
     </div>
 </div>

@@ -6,6 +6,8 @@ import { LanguageSelectorComponent } from './language-selector/language-selector
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from './button/button.component';
 import { CoreModule } from '@appCore';
+import { ChuckyNorrisComponent } from './chucky-norris/chucky-norris.component';
+import { ChuckyService } from '../services';
 
 
 
@@ -13,7 +15,8 @@ import { CoreModule } from '@appCore';
   declarations: [
     NavComponent,
     LanguageSelectorComponent,
-    ButtonComponent
+    ButtonComponent,
+    ChuckyNorrisComponent
 
   ],
   imports: [
@@ -27,6 +30,9 @@ import { CoreModule } from '@appCore';
     LanguageSelectorComponent,
     ButtonComponent
 
+  ],
+  providers: [
+    ChuckyService
   ]
 })
 export class CommonsModule { }
